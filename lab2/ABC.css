@@ -1,0 +1,82 @@
+body { font-family: Courier, monospace;
+		color: #202020;
+		height: 100%; width: 100%;}
+
+header , footer{ background-color: #fffde7; }
+
+header{height: auto; width: 100%;
+		border-style: outset;
+		border: 1%;
+		padding: 0%;
+		margin: 0%;}
+
+header img{float:left;}
+
+nav , aside{ background-color: #F0F0F0;
+			font-weight: bold;
+			line-height:3em ;}
+
+h2{color: #B22222;}
+
+.postContent h3{color: #0066cc;
+				font-style: italic;}
+
+footer {font-weight: bold;
+		font-size: small;
+		text-align: center;
+		line-height:3em ;}
+		
+aside ul{
+  list-style-image: url('icon.png');}
+  
+aside {float:right; width:20%; height:auto;
+		border-style: outset;
+		border-color:rgb(225, 235, 225);
+		border: 1%;
+		padding: 1%;
+		margin :1%;}
+
+main {width:70%; height:auto;
+		border-style: outset;
+		border-color:rgb(225, 235, 225);
+		border: 1%;
+		padding: 1%;
+		margin :1%;}
+ 
+html {height: 100%; width: 100%;}
+
+footer{width:100%; height:auto;
+		border-style: outset;
+		border: 1%;
+		padding: 0%;
+		margin: 0%;}
+header h1{padding: 80px 0;
+		text-indent: 5%;
+		text-shadow: 2px 2px #ff0000;}
+
+a:hover{color: maroon;
+		font-weight: bold;}
+		
+main img{display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;}
+table{
+	font: Arial;
+	text-align: center;
+}		
+table, th, td{
+	border: 0.5px solid;
+}
+thead{
+	color: white;
+	background-color: black;	
+}
+tbody{background-color: gray;}
+
+tfoot{ background-color:orange ;
+		border-width:2px;}
+
+caption{font-weight: bold;
+		line-height:2em ;}
+		

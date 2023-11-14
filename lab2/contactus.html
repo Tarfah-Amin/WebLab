@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABC Hospital - Contact Us</title>
+<link rel="stylesheet" href="ABC.CSS">
+<style>
+	dl {text-align: center; line-height:3em ;}
+	dt {font-weight: bold; color:#0066cc;}
+	ul{list-style-image: url('icon.png');}
+</style>
+<script src="script2.js"></script>
+</head>
+<body>
+<script>window.onload= funload;</script>
+<header>
+	<img src="images/hospital.png" alt="ABC Hospital Logo">
+	<h1>ABC Hospital Logo</h1>
+	<nav><a href="index.html">Home Page</a> <a href="aboutus.html">About Us</a> <a href="contactus.html">Contact Us</a></nav>
+</header>
+<aside>
+	<ul>
+		
+		<li><a href="index.html">Home Page</a> </li> 
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+	</ul>
+</aside>
+<main>
+	<script>if(VisitPage()== true){
+				const date = new Date()
+				document.write('<p style="background-color:gray; text-align:center; color:white;" >' + date +'</p>');}
+			else{ 
+				window.alert("You will be directed to the homepage!");
+				 location.replace("index.html"); }</script>
+	<h2>Contact Our ABC Team</h2>
+	<table>
+		<caption>Our Team Schedule</caption>
+		<thead><tr>
+			<th>Staff/Days</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr></thead>
+		<tbody><tr>
+			<td>Dr.Adam</td>
+			<td colspan="2">8:00am-12:00pm</td>
+			
+			<td colspan="2">8:00am-12:00pm</td>
+			<td>12:00pm-5:00pm</td>
+		</tr></tbody>
+		<tbody><tr>
+			<td>Dr.Jones</td>
+			<td>8:00am-12:00pm</td>
+			<td colspan="4">12:00pm-5:00pm</td>
+		</tr></tbody>
+		<tbody><tr>
+			<td>Dr.Michal</td>
+			<td>8:00am-12:00pm</td>
+			<td colspan="2">1:00pm-5:00pm</td>
+			<td colspan="2">12:00pm-5:00pm</td>
+		</tr></tbody>
+		<tfoot><tr>
+			<td>Others</td>
+			<td colspan="5">Everyday from 8:00am-5:00pm</td>
+		</tr></tfoot>
+</table>
+
+<h2>Send your message: </h2>
+<p>Our team is happy to answer to questions. Please fill out the below form and we'll be in touch as soon as possible</p>
+<p id="Newadded"></p> 
+<form>
+	<fieldset>
+		<legend>Patient Information</legend>
+		<ul>
+			<li>First name:<input type="text" name="fname"></li>
+			<li>Last name:<input type="text" name="lname"></li>
+			<li>Gender:
+					<input type="radio" name="gender" value="male">male
+					<input type="radio" name="gender" value="female">female</li>	
+			<li>Birthdate: <input type="date" ></li>
+			<li>Email:<input type="email" ></li>
+			<li>Telephone: <input type="Tel" name="Telephone" value="Telephone" placeholder="09665xxxxxxxx"></li>
+			<li>The target department
+				<select>
+					<option name="department" value="In-patients">In-patients</option>
+					<option name="department" value="out-patients">Out-patients</option>
+					<option name="department" value="medical affairs">medical affairs</option>
+				</select></li>
+			<li>Select the type of message
+				<ul>
+					<li><input type="radio" name="messageType" value="complain">complain</li>
+					<li><input type="radio" name="messageType" value="request a call">request a call</li>
+					<li><input type="radio" name="messageType" value="request to join the mailing list">request to join the mailing list</li>
+					<li><input type="radio" name="messageType" value="others">others</li>
+				</ul></li>
+			<li>Message: <br><textarea name="Message" value="Message">Type your message here please!</textarea></li>
+		</ul>
+		<input type="Submit"><input type="Reset" value="Reset">
+		
+	</fieldset>
+</form>	
+</main>
+
+<footer>
+	<p><em>©2019 ABC Hospital</em></p>
+</footer>
+</body>
+</html>
+

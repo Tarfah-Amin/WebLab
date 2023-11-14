@@ -1,0 +1,9 @@
+h1 {text-shadow: .2em .2em .1em silver;}
+body {background:
+	url(spoon.png)center /10% no-repeat ,
+	url(plaid.png);
+	}
+	a:link{ color: green;}
+	a:visited{color:gray;}
+	a:hover{background-color: darkseagreen;}
+	* {border: medium solid;}
