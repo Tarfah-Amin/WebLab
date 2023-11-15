@@ -10,6 +10,7 @@
 	ul{list-style-image: url('icon.png');}
 </style>
 <script src="script2.js"></script>
+<script src="PatientContact.js"></script>
 </head>
 <body>
 <script>window.onload= funload;</script>
@@ -71,34 +72,34 @@
 <h2>Send your message: </h2>
 <p>Our team is happy to answer to questions. Please fill out the below form and we'll be in touch as soon as possible</p>
 <p id="Newadded"></p> 
-<form>
-	<fieldset>
+<form id="PatientInfo" >
+	<fieldset><!--<label></label>-->
 		<legend>Patient Information</legend>
 		<ul>
-			<li>First name:<input type="text" name="fname"></li>
-			<li>Last name:<input type="text" name="lname"></li>
-			<li>Gender:
-					<input type="radio" name="gender" value="male">male
-					<input type="radio" name="gender" value="female">female</li>	
-			<li>Birthdate: <input type="date" ></li>
-			<li>Email:<input type="email" ></li>
-			<li>Telephone: <input type="Tel" name="Telephone" value="Telephone" placeholder="09665xxxxxxxx"></li>
-			<li>The target department
+			<li><label>First name:</label><input type="text" name="fname"></li>
+			<li><label>Last name:</label><input type="text" name="lname"></li>
+			<li><label>Gender:</label>
+					<input type="radio" name="gender" value="male"><label>male</label>
+					<input type="radio" name="gender" value="female"><label>female</label></li>	
+			<li><label>Birthdate:</label> <input type="date" ></li>
+			<li><label>Email:</label><input type="email" ></li>
+			<li><label>Telephone: </label><input type="Tel" name="Telephone"  placeholder="09665xxxxxxxx"></li>
+			<li><label>The target department</label>
 				<select>
 					<option name="department" value="In-patients">In-patients</option>
 					<option name="department" value="out-patients">Out-patients</option>
 					<option name="department" value="medical affairs">medical affairs</option>
 				</select></li>
-			<li>Select the type of message
+			<li><label>Select the type of message</label>
 				<ul>
-					<li><input type="radio" name="messageType" value="complain">complain</li>
-					<li><input type="radio" name="messageType" value="request a call">request a call</li>
-					<li><input type="radio" name="messageType" value="request to join the mailing list">request to join the mailing list</li>
-					<li><input type="radio" name="messageType" value="others">others</li>
+					<li><input type="checkbox" name="messageType" value="complain" >complain</li>
+					<li><input type="checkbox" name="messageType" value="request a call">request a call</li>
+					<li><input type="checkbox" name="messageType" value="request to join the mailing list">request to join the mailing list</li>
+					<li><input type="checkbox" name="messageType" value="others">others</li>
 				</ul></li>
-			<li>Message: <br><textarea name="Message" value="Message">Type your message here please!</textarea></li>
+			<li><label>Message:</label><br><textarea name="Message" value="Message" placeholder="Type your message here please!"></textarea></li>
 		</ul>
-		<input type="Submit"><input type="Reset" value="Reset">
+		<input type="submit" onclick="func(); return false;"/><input type="Reset" value="Reset">
 		
 	</fieldset>
 </form>	
