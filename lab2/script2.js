@@ -12,3 +12,4 @@ function funload(){
 	document.getElementById("Newadded").innerHTML =localStorage.getItem("WORD");
 	
 }
+

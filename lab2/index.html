@@ -23,7 +23,7 @@
 </aside>
 <main>
 	<article>
-		<header><h2>Why ABC Hospital</h2></header>
+		<header><h2 onmouseover="changeToRed()">Why ABC Hospital</h2></header>
 		<div class='postContent'><h3>One of the Top 10 Hospital</h3>
 		<p>ABC Hospital ranked among the top 10 hospital nationwide in 10 different areas. The rankings were drawn from evaluations of more than 4,650 hospitals across the country.</p>
 		<h3>The Highest Standard of Health Care Nationwide</h3>
@@ -32,7 +32,7 @@
 	</article>
 	
 	<article>
-		<header><h2>When You Can Visit ABC Hospital</h2></header>
+		<header><h2 onmouseover="changeToRed()">When You Can Visit ABC Hospital</h2></header>
 		<div class='postContent'><h3>ABC: at your service</h3>
 		<p>Seek treatment at any of our ABC Medical Center Campuses, 24 hours a day, 7 days a week.</p>
 		<h3>Address</h3>
@@ -46,6 +46,17 @@
 <footer>
 	<p><em>©2019 ABC Hospital</em></p>
 </footer>
+<script>
+	function changeToRed(){
+		var allH2= document.getElementsByTagName("h2");
+		for( var i =0; i <allH2.length; i++){
+			if(allH2[i].onmouseover){
+				allH2[i].style.color="red";
+				break;
+			 }}
+	}
+
+</script>
 </body>
 </html>
 
